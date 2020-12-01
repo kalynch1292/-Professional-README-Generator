@@ -1,24 +1,24 @@
-# rte
+# Demo
 
 ## Description 
 
-tre
+this is a demo
 
 ## Installation 
 
-tre
+sample only
 
 ## Usage 
 
-re
+for Demo
 
 ## Contribution 
 
-rert
+Team A
 
 ## Tests 
 
-tretre
+no instructions needed
 
 ## License 
 
@@ -26,9 +26,9 @@ MIT
 
 ## Email 
 
-undefined
+email@email.com
 
 ## Username 
 
-trerte
+sampleuserName123
 

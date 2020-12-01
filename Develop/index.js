@@ -1,8 +1,7 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
-const myBadge = ![badge](https://img.shields.io/badge/license-${answers.license}-red);
 // const generateMarkdown = require("./utils/generateMarkdown");
-// const choices = require("inquirer/lib/objects/choices");
+
 
 // array of questions for user
 const questions = [
@@ -140,7 +139,7 @@ inquirer
         projectContribution = answers.contribution;
         projectTests = answers.tests;
         projectLicense = answers.license;
-        projectEmail = answers.Email;
+        projectEmail = answers.email;
         projectUsername = answers.username;
 
 
@@ -152,7 +151,7 @@ inquirer
         fs.appendFileSync("testReadMe.md", "## Usage \n\n" + projectUsage + "\n\n")
         fs.appendFileSync("testReadMe.md", "## Contribution \n\n" + projectContribution+ "\n\n")
         fs.appendFileSync("testReadMe.md", "## Tests \n\n" + projectTests+ "\n\n")
-        fs.appendFileSync("testReadMe.md", "## License \n\n" + projectLicense+ myBadge+ "\n\n")
+        fs.appendFileSync("testReadMe.md", "## License \n\n" + projectLicense+ "\n\n")
         fs.appendFileSync("testReadMe.md", "## Email \n\n" + projectEmail+ "\n\n")
         fs.appendFileSync("testReadMe.md", "## Username \n\n" + projectUsername+ "\n\n")
         // fs.appendFileSync("testReadMe.md", installation)
@@ -160,21 +159,3 @@ inquirer
 .catch(error => {
     console.log(error)
 });
-// // function to write README file
-// function writeToFile(fileName, data) {
-//     fs.writeFile(fileName, data, (err) =>
-//         err ? console.log(err) : console.log("success!")
-//         )
-// }
-
-// // function to initialize program
-// function init() {
-//     inquirer.prompt([questions])
-//     .then((data) => {
-//         let runMark = generateMarkdown(data) 
-//         writeToFile("generateMarkdown.md", runMark)
-//     })
-// }
-
-// // function call to initialize program
-// init();
